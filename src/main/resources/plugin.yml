@@ -1,0 +1,54 @@
+name: LiteGuard
+version: 1.0.0
+main: net.liteguard.LiteGuardPlugin
+api-version: '1.21.11'
+description: Lightweight asynchronous moderation with local SQLite storage.
+authors: [LiteGuard]
+softdepend: [LuckPerms, voicechat]
+
+commands:
+  ban:
+    description: Permanently ban a player.
+    usage: /ban <player> [reason]
+    permission: liteguard.command.ban
+  tempban:
+    description: Temporarily ban a player.
+    usage: /tempban <player> <duration> [reason]
+    permission: liteguard.command.tempban
+  unban:
+    description: Revoke a player's active ban.
+    usage: /unban <player>
+    permission: liteguard.command.unban
+  mute:
+    description: Mute a player's text chat, optionally for a duration.
+    usage: /mute <player> [duration] [reason]
+    permission: liteguard.command.mute
+  unmute:
+    description: Revoke a player's active text mute.
+    usage: /unmute <player>
+    permission: liteguard.command.unmute
+  vcmute:
+    description: Mute a player's voice chat, optionally for a duration.
+    usage: /vcmute <player> [duration] [reason]
+    permission: liteguard.command.vcmute
+  vcunmute:
+    description: Revoke a player's active voice mute.
+    usage: /vcunmute <player>
+    permission: liteguard.command.vcunmute
+  servermute:
+    description: Toggle global text and voice chat lockdown.
+    usage: /servermute
+    permission: liteguard.command.servermute
+
+permissions:
+  liteguard.command.ban: {default: op}
+  liteguard.command.tempban: {default: op}
+  liteguard.command.unban: {default: op}
+  liteguard.command.mute: {default: op}
+  liteguard.command.unmute: {default: op}
+  liteguard.command.vcmute: {default: op}
+  liteguard.command.vcunmute: {default: op}
+  liteguard.command.servermute: {default: op}
+  liteguard.bypass.servermute:
+    description: Bypass global text and voice chat lockdown.
+    default: false

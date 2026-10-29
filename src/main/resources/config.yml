@@ -1,0 +1,25 @@
+# SQLite is intended for one Paper server. Do not point multiple servers at the same SQLite file.
+database:
+  file: liteguard.db
+  pool-size: 2
+  connection-timeout-ms: 5000
+  busy-timeout-ms: 5000
+
+prelogin:
+  cache-ready-timeout-ms: 8000
+  database-error-message: "Moderation data is temporarily unavailable. Please try again shortly."
+
+cache:
+  refresh-seconds: 30
+
+limits:
+  maximum-reason-length: 240
+  maximum-duration-days: 3650
+
+voice:
+  actionbar-throttle-ms: 1200
+
+discord:
+  # Leave blank to disable. Use an HTTPS Discord webhook URL and keep it private.
+  webhook-url: ""
+  request-timeout-seconds: 5
