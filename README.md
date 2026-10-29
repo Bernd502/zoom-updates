@@ -1,6 +1,6 @@
 # Zoom update channel
 
-This public repository serves Zoom release binaries and a signed update manifest. Current release: **2.8.18+26.2**. Source code remains in the private Crown Client repository.
+This public repository serves Zoom release binaries and a signed update manifest. Current release: **2.8.19+26.2**. Source code remains in the private Crown Client repository.
 
 The client verifies `latest.sig` with an embedded Ed25519 public key before trusting `latest.json`. The manifest contains the version and SHA-256 of `zoom.jar`. The matching private signing key is kept outside this repository.
 
