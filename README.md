@@ -2,6 +2,10 @@
 
 This public repository serves Zoom release binaries and a signed update manifest.
 The current manual download is **[zoom-1.19.8+26.2.jar](zoom-1.19.8+26.2.jar)**.
+Its nine menu images are distributed as a separate [background pack](zoom-menu-backgrounds-v1.zip).
+Zoom downloads and verifies the pack automatically, then caches it in the
+Minecraft instance's `config/zoom/` folder for offline use. The menus remain
+usable with a dark background if the pack is unavailable.
 Older versioned jars are retained as archives; install only one Zoom jar in a
 Minecraft instance. Source code remains in the private Crown Client repository.
 
