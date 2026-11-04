@@ -1,7 +1,7 @@
 # Zoom update channel
 
 This public repository serves Zoom release binaries and a signed update manifest.
-The current manual download is **[zoom-1.20.1+26.2.jar](zoom-1.20.1+26.2.jar)**.
+The current manual download is **[zoom-1.20.2+26.2.jar](zoom-1.20.2+26.2.jar)**.
 Its nine menu images are distributed as a separate [background pack](zoom-menu-backgrounds-v1.zip).
 Zoom downloads and verifies the pack automatically, then caches it in the
 Minecraft instance's `config/zoom/` folder for offline use. The menus remain
@@ -11,8 +11,8 @@ Minecraft instance. Source code remains in the private Crown Client repository.
 
 The client verifies `latest.sig` with an embedded Ed25519 public key before trusting `latest.json`. The manifest contains the version and SHA-256 of `zoom.jar`. The matching private signing key is kept outside this repository.
 The signed automatic-update manifest still points to 2.8.19+26.2. Install
-1.20.1 manually until a new manifest is signed and published. The 1.20.0,
-1.19.9 and 1.19.8 JARs remain available as archives. Future releases advance the last component
+1.20.2 manually until a new manifest is signed and published. The 1.20.1,
+1.20.0, 1.19.9 and 1.19.8 JARs remain available as archives. Future releases advance the last component
 from 0 through 9, then increase the middle component and reset the last to 0;
 the first component remains 1.
 
