@@ -33,6 +33,6 @@ On Paper 1.21.11 with BuffedItems, everyone can run `/cco status` or open the re
 
 ## LifeStealZ heart crafting guard
 
-**[HeartCraftGuard 1.0.0 JAR](plugins/HeartCraftGuard-1.0.0.jar)** · [Source ZIP](plugins/HeartCraftGuard-1.0.0-source.zip)
+**[HeartCraftGuard 1.0.1 JAR](plugins/HeartCraftGuard-1.0.1.jar)** · [Source ZIP](plugins/HeartCraftGuard-1.0.1-source.zip)
 
-A separate Paper 1.21.11 plugin that prevents LifeStealZ hearts from being used as crafting ingredients. It identifies hearts by LifeStealZ item data, so a safe anvil rename does not bypass the rule. Install it alongside LifeStealZ.
+A separate Paper 1.21.11 plugin that allows marked LifeStealZ hearts as ingredients only when the result is named Heart Egg (including color, case, separator and plural variants). Other heart-ingredient recipes stay blocked. A safe anvil rename does not bypass the rule. Install it alongside LifeStealZ.
