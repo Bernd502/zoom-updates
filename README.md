@@ -21,6 +21,6 @@ To publish a build, replace `zoom.jar`, add its versioned JAR, update `latest.js
 
 ## Separate Paper server plugin
 
-**[MaceCorePickup 1.0.2 JAR](plugins/MaceCorePickup-1.0.2.jar)** · [Source ZIP](plugins/MaceCorePickup-1.0.2-source.zip)
+**[MaceCorePickup 1.0.3 JAR](plugins/MaceCorePickup-1.0.3.jar)** · [Source ZIP](plugins/MaceCorePickup-1.0.3-source.zip)
 
-Install this JAR in a **Paper 1.21.11 server's** `plugins` folder, alongside BuffedItems. It is separate from the Zoom Fabric client. A non-OP cannot carry a configured core and a mace together in either pickup order, or store a mace in a container, bundle, item frame or armor stand. Hopper mace transfers are blocked. Operators can use `/macecorepickup on`, `off`, `toggle`, or `status`; the setting persists across restarts. Remove any older MaceCorePickup JAR before installing 1.0.2.
+Install this JAR in a **Paper 1.21.11 server's** `plugins` folder, alongside BuffedItems. It is separate from the Zoom Fabric client. A non-OP cannot carry a configured core and a mace together in either pickup order, or store a mace in a container, bundle, item frame or armor stand. Hopper mace transfers are blocked. Operators can use `/mcp on`, `off`, `toggle`, `status`, or `inspect`; the setting persists across restarts. Remove any older MaceCorePickup JAR before installing 1.0.3.
