@@ -24,3 +24,9 @@ To publish a build, replace `zoom.jar`, add its versioned JAR, update `latest.js
 **[MaceCorePickup 1.0.3 JAR](plugins/MaceCorePickup-1.0.3.jar)** · [Source ZIP](plugins/MaceCorePickup-1.0.3-source.zip)
 
 Install this JAR in a **Paper 1.21.11 server's** `plugins` folder, alongside BuffedItems. It is separate from the Zoom Fabric client. A non-OP cannot carry a configured core and a mace together in either pickup order, or store a mace in a container, bundle, item frame or armor stand. Hopper mace transfers are blocked. Operators can use `/mcp on`, `off`, `toggle`, `status`, or `inspect`; the setting persists across restarts. Remove any older MaceCorePickup JAR before installing 1.0.3.
+
+## CoreCraftOnce Paper plugin
+
+**[CoreCraftOnce 1.0.1 JAR](plugins/CoreCraftOnce-1.0.1.jar)** · [Source ZIP](plugins/CoreCraftOnce-1.0.1-source.zip)
+
+On Paper 1.21.11 with BuffedItems, everyone can run `/cco status` or open the read-only `/cco` menu. Only admins can reset counts or give cores. Replace any older CoreCraftOnce JAR before installing it.
