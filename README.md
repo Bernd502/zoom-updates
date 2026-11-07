@@ -30,3 +30,9 @@ Install this JAR in a **Paper 1.21.11 server's** `plugins` folder, alongside Buf
 **[CoreCraftOnce 1.0.1 JAR](plugins/CoreCraftOnce-1.0.1.jar)** · [Source ZIP](plugins/CoreCraftOnce-1.0.1-source.zip)
 
 On Paper 1.21.11 with BuffedItems, everyone can run `/cco status` or open the read-only `/cco` menu. Only admins can reset counts or give cores. Replace any older CoreCraftOnce JAR before installing it.
+
+## LifeStealZ heart crafting guard
+
+**[HeartCraftGuard 1.0.0 JAR](plugins/HeartCraftGuard-1.0.0.jar)** · [Source ZIP](plugins/HeartCraftGuard-1.0.0-source.zip)
+
+A separate Paper 1.21.11 plugin that prevents LifeStealZ hearts from being used as crafting ingredients. It identifies hearts by LifeStealZ item data, so a safe anvil rename does not bypass the rule. Install it alongside LifeStealZ.

@@ -13,3 +13,9 @@ Operators or the console can use `/mcp on|off|toggle|status|inspect`; the state 
 [Download CoreCraftOnce 1.0.1](CoreCraftOnce-1.0.1.jar) · [Source ZIP](CoreCraftOnce-1.0.1-source.zip)
 
 Everyone may use `/cco status` or the `/cco` status menu. Only admins may reset or give cores. Install it on Paper 1.21.11 alongside BuffedItems.
+
+## HeartCraftGuard
+
+[Download HeartCraftGuard 1.0.0](HeartCraftGuard-1.0.0.jar) · [Source ZIP](HeartCraftGuard-1.0.0-source.zip)
+
+Separate Paper 1.21.11 plugin requiring LifeStealZ. Prevents its marked hearts from being crafting ingredients. Plain anvil renaming remains available if the marker survives; anvil results that lose it are blocked.
