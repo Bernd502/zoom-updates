@@ -1,5 +1,11 @@
 # Paper server plugins
 
+## CoreSpawnGuard
+
+**[Download CoreSpawnGuard 1.0.0](CoreSpawnGuard-1.0.0.jar)** · [Source ZIP](CoreSpawnGuard-1.0.0-source.zip)
+
+For Paper 1.21.11 with BuffedItems **1.9.0**. Disables configured cores' active abilities and passive effects inside a configurable square around spawn while players keep their items. Defaults to a 32-block radius in `world`; edit the plugin config for other worlds and core IDs. OPs and the console can use `/corespawn status|on|off|radius <blocks>`. BuffedItems removes passive effects on its next effect pass, usually within one second. A timed active effect cast before entering spawn can last until its normal expiry.
+
 ## MaceLimiter
 
 **[Download MaceLimiter 1.0.0](MaceLimiter-1.0.0.jar)** · [Source ZIP](MaceLimiter-1.0.0-source.zip)

@@ -21,6 +21,10 @@ To publish a build, replace `zoom.jar`, add its versioned JAR, update `latest.js
 
 ## Separate Paper server plugin
 
+**[CoreSpawnGuard 1.0.0 JAR](plugins/CoreSpawnGuard-1.0.0.jar)** · [Source ZIP](plugins/CoreSpawnGuard-1.0.0-source.zip)
+
+Standalone Paper 1.21.11 plugin for BuffedItems 1.9.0. Suppresses the configured cores around spawn without removing them. The default square reaches 32 blocks from `world` spawn at every height. See the [plugin guide](plugins/README.md).
+
 **[MaceLimiter 1.0.0 JAR](plugins/MaceLimiter-1.0.0.jar)** · [Source ZIP](plugins/MaceLimiter-1.0.0-source.zip)
 
 Standalone Paper 1.21.11 plugin. The default limit is one mace, and existing maces remain. OPs can view a colored `/mace status` with holders and locations, toggle enforcement, and set the cap. See the [plugin guide](plugins/README.md).
