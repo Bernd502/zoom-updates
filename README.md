@@ -20,6 +20,12 @@ the first component remains 1.
 
 To publish a build, replace `zoom.jar`, add its versioned JAR, update `latest.json` with the version and SHA-256, sign the exact manifest bytes with the private Ed25519 key, and commit the resulting `latest.sig`. The private repository contains the signing script; never upload the private key.
 
+## SFMode Paper plugin · staging build only
+
+**[SFMode 0.2.0 JAR](plugins/SFMode-0.2.0.jar)** · [Source ZIP](plugins/SFMode-0.2.0-source.zip)
+
+Paper 1.21.11 plugin requiring LuckPerms. This is an early staging build, not a production release. It has passed build/database tests and a Paper + LuckPerms startup/console smoke test, but has not passed a real player activation/recovery test. Its item lineage and rollback coverage are limited; review the source and limitations before using it. Do not install on a live SMP.
+
 ## Separate Paper server plugin
 
 **[CoreSpawnGuard 1.0.0 JAR](plugins/CoreSpawnGuard-1.0.0.jar)** · [Source ZIP](plugins/CoreSpawnGuard-1.0.0-source.zip)

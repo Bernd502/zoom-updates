@@ -1,3 +1,11 @@
+# Paper plugin downloads
+
+## SFMode — 0.2.0 staging build only
+
+[Download JAR](SFMode-0.2.0.jar) · [Source ZIP](SFMode-0.2.0-source.zip) · [Source branch](https://github.com/Bernd502/Codexthingy/tree/work/sfmode)
+
+Paper 1.21.11; requires LuckPerms. Startup, console status and UUID allowlist were smoke-tested. Player session transitions, actual inventory recovery, item rollback and all event paths need staging tests. **Not ready for a live server.**
+
 # Paper server plugins
 
 ## CoreSpawnGuard
