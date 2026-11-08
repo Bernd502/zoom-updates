@@ -1,4 +1,13 @@
-# MaceCorePickup
+# Paper server plugins
+
+## MaceLimiter
+
+**[Download MaceLimiter 1.0.0](MaceLimiter-1.0.0.jar)** · [Source ZIP](MaceLimiter-1.0.0-source.zip)
+
+Separate Paper 1.21.11 plugin. Defaults to one mace. OPs and the console can run `/mace status [page]`, `/mace on`, `/mace off`, and `/mace limit <number>`. Status uses a colored meter and lists holders and locations. Existing maces found on first scan are kept, even above the cap. Offline players and unloaded chunks are shown at their last known location once discovered. Put this JAR in the server's `plugins` folder; it can run beside MaceCorePickup.
+
+## MaceCorePickup
+
 
 Latest version: **1.0.3** for Paper 1.21.11.
 
