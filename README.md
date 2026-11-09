@@ -53,3 +53,9 @@ On Paper 1.21.11 with BuffedItems, everyone can run `/cco status` or open the re
 **[HeartCraftGuard 1.0.1 JAR](plugins/HeartCraftGuard-1.0.1.jar)** · [Source ZIP](plugins/HeartCraftGuard-1.0.1-source.zip)
 
 A separate Paper 1.21.11 plugin that allows marked LifeStealZ hearts as ingredients only when the result is named Heart Egg (including color, case, separator and plural variants). Other heart-ingredient recipes stay blocked. A safe anvil rename does not bypass the rule. Install it alongside LifeStealZ.
+
+## SFTab · customizable Tab player list
+
+**[SFTab 1.0.0 JAR](plugins/SFTab-1.0.0.jar)** · [Source ZIP](plugins/SFTab-1.0.0-source.zip) · [Guide](plugins/SFTab-README.md)
+
+Separate Paper 1.21.11 / Java 21 plugin. OPs can use `/sftab edit` to change header/footer text, gradients, animations, names, sorting and world layouts in game. LuckPerms and PlaceholderAPI are optional. See the guide for commands, configuration and verification limits.

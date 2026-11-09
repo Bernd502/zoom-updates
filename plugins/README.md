@@ -1,5 +1,11 @@
 # Paper plugin downloads
 
+## SFTab 1.0.0
+
+[Download JAR](SFTab-1.0.0.jar) · [Source ZIP](SFTab-1.0.0-source.zip) · [Full guide](SFTab-README.md)
+
+Customizable native Tab list for Paper 1.21.11 / Java 21. Use `/sftab edit` as OP for the in-game editor, or edit YAML and reload. Supports headers/footers, gradients, animations, player names, rank sorting, world layouts and optional LuckPerms/PlaceholderAPI. Ten automated tests and a Paper + LuckPerms startup/console smoke test passed. Player GUI/visual and live PlaceholderAPI testing remain pending.
+
 ## SFMode — 0.2.0 staging build only
 
 [Download JAR](SFMode-0.2.0.jar) · [Source ZIP](SFMode-0.2.0-source.zip) · [Source branch](https://github.com/Bernd502/Codexthingy/tree/work/sfmode)
