@@ -1,7 +1,7 @@
 # Zoom update channel
 
 This public repository serves Zoom release binaries and a signed update manifest.
-The current manual download is **[zoom-1.22.1+26.2.jar](zoom-1.22.1+26.2.jar)**. Older jars remain as archives; 1.21.3 and 1.21.4 have a startup crash and should not be installed.
+The current manual download is **[zoom-1.22.2+26.2.jar](zoom-1.22.2+26.2.jar)**. Older jars remain as archives; 1.21.3 and 1.21.4 have a startup crash and should not be installed.
 Its nine menu images are distributed as a separate [background pack](zoom-menu-backgrounds-v1.zip).
 Zoom downloads and verifies the pack automatically, then caches it in the
 Minecraft instance's `config/zoom/` folder for offline use. The menus remain
@@ -11,7 +11,7 @@ Older versioned jars are retained as archives; install only one Zoom jar in a
 Minecraft instance. Source code remains in the private Crown Client repository.
 
 The client verifies `latest.sig` with an embedded Ed25519 public key before trusting `latest.json`. The manifest contains the version and SHA-256 of `zoom.jar`. The matching private signing key is kept outside this repository.
-The signed automatic-update manifest now points to **1.22.1+26.2**, with a verified signature and the SHA-256 of the current `zoom.jar`. This release corrects Auto Farmer: its module switch starts it, with no separate Activate key; each hit waits for full attack recharge and Minecraft’s item cooldown. Shield Breaker handoff defaults ON when both modules are enabled, and farmer-triggered axe hits wait for their own cooldown rather than cancelling early. The 50% fresh-shield chance from 1.22.0 remains. Grim checks stay enabled. A clean Java 25 build and 427 tests passed; live server verification is still needed.
+The signed automatic-update manifest now points to **1.22.2+26.2**. Cart Helper selects a hotbar minecart after native rail placement; optional placement waits at least four ticks and uses Minecraft's normal item-use path. No custom packets or Grim exemptions are sent. A Java 25 build and 429 unit tests passed; live Grim verification is still needed.
 
 Older versioned jars remain available as archives. Future releases advance the last component from 0 through 9, then increase the middle component and reset the last to 0; the first component remains 1.
 
@@ -56,6 +56,6 @@ A separate Paper 1.21.11 plugin that allows marked LifeStealZ hearts as ingredie
 
 Separate Paper 1.21.11 / Java 21 plugin. OPs can use `/sftab edit` to change header/footer text, gradients, animations, names, sorting and world layouts in game. LuckPerms and PlaceholderAPI are optional. See the guide for commands, configuration and verification limits.
 
-## Queued · Shield Breaker fresh-shield chance
+## Delivered · Shield Breaker fresh-shield chance
 
-Pending implementation: use 50% activation chance during the first 2 seconds after an opponent is observed raising their shield; afterward return to the configured chance. Sample once per physical attempt and retain native shield readiness and the 1.21.8 packet-timing fix. This is queued only, not included in the current JAR.
+Implemented in 1.22.0: use 50% activation chance during the first 2 seconds after an opponent is observed raising their shield; afterward return to the configured chance. Sample once per physical attempt and retain native shield readiness and the 1.21.8 packet-timing fix. This is included in the current JAR.
