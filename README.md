@@ -1,7 +1,7 @@
 # Zoom update channel
 
 This public repository serves Zoom release binaries and a signed update manifest.
-The current manual download is **[zoom-1.21.9+26.2.jar](zoom-1.21.9+26.2.jar)**. Older jars remain as archives; 1.21.3 and 1.21.4 have a startup crash and should not be installed.
+The current manual download is **[zoom-1.22.0+26.2.jar](zoom-1.22.0+26.2.jar)**. Older jars remain as archives; 1.21.3 and 1.21.4 have a startup crash and should not be installed.
 Its nine menu images are distributed as a separate [background pack](zoom-menu-backgrounds-v1.zip).
 Zoom downloads and verifies the pack automatically, then caches it in the
 Minecraft instance's `config/zoom/` folder for offline use. The menus remain
@@ -11,7 +11,7 @@ Older versioned jars are retained as archives; install only one Zoom jar in a
 Minecraft instance. Source code remains in the private Crown Client repository.
 
 The client verifies `latest.sig` with an embedded Ed25519 public key before trusting `latest.json`. The manifest contains the version and SHA-256 of `zoom.jar`. The matching private signing key is kept outside this repository.
-The signed automatic-update manifest now points to **1.21.9+26.2**, with a verified signature and the SHA-256 of the current `zoom.jar`. This release also queues Shield Breaker axe selection and return for the beginning of the next game tick, before vanilla syncs the carried slot and sends movement. It targets a plausible cause of Simulation alerts; live Grim verification is still needed. The 1.21.8 Post fix was verified by the user on a live Grim server. Grim checks remain enabled. A clean Java 25 build and 414 tests passed.
+The signed automatic-update manifest now points to **1.22.0+26.2**, with a verified signature and the SHA-256 of the current `zoom.jar`. This release restores Auto Farmer, OFF by default with an unbound activation key. Its target-filtered native attacks run in normal input processing; an optional Shield Breaker handoff is OFF by default. Shield Breaker now uses a 50% activation chance during the first two observed seconds of a new shield raise, then the configured chance. Grim checks remain enabled. A clean Java 25 build and 433 tests passed; live Grim verification of these changes is still needed.
 
 Older versioned jars remain available as archives. Future releases advance the last component from 0 through 9, then increase the middle component and reset the last to 0; the first component remains 1.
 
