@@ -11,7 +11,7 @@ Older versioned jars are retained as archives; install only one Zoom jar in a
 Minecraft instance. Source code remains in the private Crown Client repository.
 
 The client verifies `latest.sig` with an embedded Ed25519 public key before trusting `latest.json`. The manifest contains the version and SHA-256 of `zoom.jar`. The matching private signing key is kept outside this repository.
-The signed automatic-update manifest now points to **1.21.8+26.2**, with a verified signature and the SHA-256 of the current `zoom.jar`. This release fixes Shield Breaker's delayed attack and hotbar restoration timing: attacks run in native input processing, while vanilla synchronizes carried slots. It does not disable or exempt any Grim checks. A clean build and 414 tests passed; live Grim-server verification remains pending.
+The signed automatic-update manifest now points to **1.21.8+26.2**, with a verified signature and the SHA-256 of the current `zoom.jar`. This release fixes Shield Breaker's delayed attack and hotbar restoration timing: attacks run in native input processing, while vanilla synchronizes carried slots. It does not disable or exempt any Grim checks. A clean build and 414 tests passed; the user reported successful live Grim-server testing on 2026-11-10.
 
 Older versioned jars remain available as archives. Future releases advance the last component from 0 through 9, then increase the middle component and reset the last to 0; the first component remains 1.
 
@@ -55,3 +55,7 @@ A separate Paper 1.21.11 plugin that allows marked LifeStealZ hearts as ingredie
 **[SFTab 1.0.0 JAR](plugins/SFTab-1.0.0.jar)** · [Source ZIP](plugins/SFTab-1.0.0-source.zip) · [Guide](plugins/SFTab-README.md)
 
 Separate Paper 1.21.11 / Java 21 plugin. OPs can use `/sftab edit` to change header/footer text, gradients, animations, names, sorting and world layouts in game. LuckPerms and PlaceholderAPI are optional. See the guide for commands, configuration and verification limits.
+
+## Queued · Shield Breaker fresh-shield chance
+
+Pending implementation: use 50% activation chance during the first 2 seconds after an opponent is observed raising their shield; afterward return to the configured chance. Sample once per physical attempt and retain native shield readiness and the 1.21.8 packet-timing fix. This is queued only, not included in the current JAR.
